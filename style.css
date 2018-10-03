@@ -1,0 +1,112 @@
+.container{
+	margin: 20px auto;
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	height: 600px;
+	background:linear-gradient( 0deg, #80b2f7, #2C4961)
+}
+
+.name{
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+	font-size: 40px;
+}
+
+.btn{
+	position: relative;
+}
+
+.box{
+	display: flex;
+	justify-content: center;
+}
+
+.inp{
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0px 0px 2px 2px #e6edf7; 
+	height: 40px;
+	width: 500px;
+	font-size: 20px;
+}
+
+button{
+	text-transform: uppercase;
+	background: #118DDB;
+	border: none;
+	border-radius: 2px;
+	height: 45px;
+	width: 90px;
+	margin-left: 10px;
+	
+}
+.input{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.output{
+	margin-left: 230px;
+}
+
+.output #dv .input{
+	background-color: #FFF;
+	border: none;
+	border-radius: 2px;
+	height: 40px;
+	width: 500px;
+	box-shadow: 0px 0px 2px 2px #e6edf7; 
+	font-size: 20px;
+}
+p{
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #FFF;
+	border: none;
+	border-radius: 2px;
+	height: 40px;
+	width: 500px;
+	box-shadow: 0px 0px 2px 2px #e6edf7; 
+	font-size: 20px;
+	margin: 0;
+}
+#dv {
+	 position: relative;
+     left: -87px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+input[name=inp] {
+	background-color: #FFF;
+	border: none;
+	border-radius: 2px;
+	height: 40px;
+	width: 500px;
+	box-shadow: 0px 0px 2px 2px #e6edf7; 
+	font-size: 20px;
+}
+
+input[type=checkbox]{
+	width: 30px;
+	height: 30px;
+	margin-right: 10px
+	
+}
+
+button:hover{
+	animation-name: hoverbut;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes hoverbut{
+	100%{
+		box-shadow: 0px 0px 2px 2px #118DDB;
+	}
+}
+
