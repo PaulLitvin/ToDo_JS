@@ -1,5 +1,3 @@
-
-
 var input = document.getElementsByClassName("inp")[0];
 var output = document.getElementsByClassName("output")[0];
 var btnAdd = document.getElementsByClassName("btn")[0];
@@ -26,21 +24,21 @@ function addElements(){
 	getSaveElement();
 	getDeleteElement();
 	c++;
-};
+}
 
 function addInputCheckbox(){
 	var inp = document.createElement('input');
 	inp.type = "checkbox";
 	inp.id = "check" + c;
 	return inp;
-};
+}
 
 function addEditButton(){
 	var b = document.createElement('button');
 	b.id = "edit" + c;
 	b.innerHTML = "Edit";
 	return b;
-};
+}
 
 function addLabel(){
 	var lab = document.createElement('p');
@@ -48,7 +46,7 @@ function addLabel(){
 	lab.name = "input";
 	lab.innerHTML = input.value;
 	return lab;
-};
+}
 
 function addSaveButton(){
 	var sav = document.createElement('button');
@@ -56,19 +54,19 @@ function addSaveButton(){
 	sav.innerHTML = "Save";
 	sav.style.display = "none";
 	return sav;
-};
+}
 
 function addDeleteButton(){
 	var del = document.createElement('button');
 	del.id = 'del' + c;
 	del.innerHTML = 'Delete';
 	return del;
-};
+}
 
 function getCheckboxElement(){
 		var check = document.getElementById("check"+c);
 		checkedFunc(check);
-};
+}
 
 function checkedFunc(elem){
 	elem.addEventListener('change', function(){
@@ -79,10 +77,10 @@ function checkedFunc(elem){
 		else{
 			document.getElementById("tex" + i).style = "text-decoration: none;";
 		}
-		};
-	};
+		}
+	}
 });
-};
+}
 
 function getEditElement(){
 		var edit = document.getElementById('edit'+c);
@@ -101,10 +99,10 @@ function getEditElement(){
 				document.getElementById("check" + i).checked = false;
 				elem.style.display = "none";
 				document.getElementById('sv' + i).style = "display: block";
-			};
-		};
+			}
+		}
 	});
-};
+}
 
 function getSaveElement(){
 	var save = document.getElementById('sv' + c);
@@ -122,10 +120,10 @@ function saveFunc(elem){
 				var edit = document.getElementById('edit'+i);
 				elem.style.display = "none";
 				document.getElementById('edit' + i).style = "display: block";
-			};
-		};
+			}
+		}
 	});
-};
+}
 
 function getDeleteElement(){
 	var del = document.getElementById('del' + c);
@@ -133,13 +131,13 @@ function getDeleteElement(){
 }
 function deleteFunc(elem){
 	elem.addEventListener('click', function(){
-		console.log(document.getElementsByClassName("outp").length)
+		console.log(document.getElementsByClassName("outp").length);
 
 		for(var i = 0; i <= c; i++){
 			if(elem.id == "del"+i){
 			    document.getElementById("tex"+i).parentNode.remove();	
-			};
-		};
+			}
+		}
 	});
-};
+}
 
